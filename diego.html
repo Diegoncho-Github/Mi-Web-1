@@ -1,0 +1,246 @@
+<!DOCTYPE html> <!--INDICA QUE ES HTML5-->
+<html lang="en">
+<head> 
+    <title>Mi Web Diegoncho</title> <!--Nombre ventana-->
+    <link rel="stylesheet" href="Estilos.css"/>  <!--Archivo CSS-->
+     <!--Toda esta es la fuente de texto-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Nombre pagina web-->
+    <header>
+        <div class="container__header">
+            <div class="Logo">
+                <img src="Favicon/icons8-pixel-heart-48.png" alt="">
+            </div>
+               
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Productos1</a></li>
+                        <li><a href="">Productos2</a></li>
+                        <li><a href="">Productos3</a></li>
+                        <li><a href="">Productos4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__register">
+                <input type="button" class="btn__header-register" value="Registrate feo">
+            </div>
+        </div>
+        <h1 id="Titulo" class="Margen">Mi Pagina Web</h1>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+    <div class="cover">
+        <div class="text__information-cover">
+            <h1>Hola Diego</h1>
+            <p>Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+                Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+                Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+                Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+                Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+                Perritos bailandoPerritos bailandoPerritos bailandoPerritos bailando
+            </p>
+            <div class="buttons_cover">
+                <input type="button" class="btn__register-cover" value="perro">
+                <input type="button" class="btn_readmore-cover" value="gato">
+            </div>
+
+        </div>
+        <div class="media__cover"> 
+            <img src="Imagenes/Astronauta.png" alt="" width="400">
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <div class="container__banner">
+        <div class="banner">
+            <div class="banner__icon-heart">
+                <img src="Imagenes/estrella-1.png" id="icon_heart" alt="" width="80">
+            </div>
+            <div class="banner__icon-fire">
+                <img src="Imagenes/luna.png" alt="" id="icon_fire" width="80">
+            </div>
+            <div class="banner__text">
+                <h2>perros bailando bailando</h2>
+                <a href="#">Leer Mas</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="Fondo"> <!--ayuda a dividir la pagina en secciones-->
+        <h1 id="Bordes">Titulo LINK</h1>
+        <p class="Parrafo">Esto es un parrafo y esto es <br> punto aparte</p>  <!--br es punto aparte-->
+        <p class="Perro Feliz">Esto es texto para CSS</p>
+        <p class="Gato Feliz">Esto es texto para CSS</p>
+        <p id="Fuente">Esto es para probar la fuente de texto</p>
+        <a href="https://www.google.com"> ir a google en la misma ventana</a> <br> <!--abrira un link en mi misma ventana-->
+        <a target="_blank" href="https://www.google.com"> ir a google en otra ventana</a> <!--abrira un link en otra ventana-->
+        <hr> <!--hr:esto es una linea separadora-->
+    </section>
+    <section>
+        <h2>Titulo 2 (Fotos)</h2>
+        <img src="https://cdn.britannica.com/20/93520-050-3E663489/Puma.jpg" width="400"/>  <!--colocar el link de una imagen-->
+        <!--width:ancho / hight:alto-->
+        <img src="Imagenes/Puma-Logo.png" width="400"/> <!--colocar imagen de mis carpetas-->
+    </section>
+
+    <section>
+        <h3>Titulo 3 (Formulario)</h4> 
+            <!--El for y id es para cuando el cliente de click fuera del cuadro igual podra escribir / el placeholder es para que 
+            aprezca en tenue escribe tu nombre-->
+            <!--Action es para mandar los datos, se debe ver mas adelante-->
+        <form action="/formulario" method="GET"> 
+              <label for="click afuera">Nombre</label>
+             <input  id="click afuera" placeholder="Escribe tu nombre"/> 
+            <!--Email-->   
+                <label>Email</label>
+                <input value="este texto aparecera" type="email" placeholder="Escribe tu nombre"/>
+            <!--password-->   
+                <label>Password</label>
+                <input type="password" placeholder="Escribe tu nombre"/>
+            <!--circulo-->   
+                <label>Circulo</label>
+                <input type="radio" placeholder="Escribe tu nombre"/>
+            <!--checkbox-->   
+                <label>Cubo</label>
+                <input type="checkbox" placeholder="Escribe tu nombre"/>
+            <!--Archivo-->   
+                <label>Archivo</label>
+                <input type="file" placeholder="Escribe tu nombre"/>
+                <br>
+            <!--Una caja para escribir comentario cols y rows es para el tamaño de la caja-->  
+                <label for="comentario">Comentrio</label>  
+                <textarea cols="20" rows="2" id="comentario" placeholder="escribe aca" name="caja comentario"></textarea>
+            <!--Boton de enviar--> 
+                <input type="submit"/>
+            <!--Boton de enviar distinto--> 
+                <button type="submit">Enviar</button>
+            <!--Boton de reset--> 
+                <button type="reset">Reset</button>
+             <!--Boton de JavaScript--> 
+                <button type="button">boton de JavaScript</button>   
+        </form>
+    </section>
+   
+    <section>
+    <h4>Titulo 4 (Listas)</h4>
+        <!--ul lista no ordenada-->
+        <ul>
+            <li>ELemento 1</li>
+            <li>ELemento 2</li>
+                <!--crear subelementos-->
+                <ul>
+                    <!--style es el tipo de simbolo a usar en este caso romano-->
+                    <li style="list-style: lower-roman;">sub elemento</li>
+                    <li>sub elemento</li>
+                    <li>sub elemento</li>
+                </ul>
+            <li>ELemento 3</li>
+            <li>ELemento 4</li>
+        </ul>
+
+        <!--ol lista ordenada-->
+        <ol>
+            <li>ELemento 1</li>
+            <li>ELemento 2</li>
+            <!--Value que empieze del 50-->
+            <li value="50">ELemento 3</li>
+            <li>ELemento 4</li>
+        </ol>
+    </section>
+
+    <section>
+    <h5>Titulo 5 (tablas)</h5>
+        <table>
+            <tr>
+                <!--th cabezera de tabla-->
+                <th>Cabezera1</th>
+                <th>Cabezera2</th>
+            </tr>
+            <tr>
+                <td>tabla1</td>
+                <td>tabla2</td>
+            </tr>
+        </table>
+    </section>
+<!--est es para la parte final de la pagina-->       
+<footer> 
+    <!--mailito es para cuando de click abra el servidor de correo instalado-->
+    <a href="mailito:diegoncho.correo@gmail.com">diegoncho.correo@gmail.com</a>
+    <p>Copyright</p>
+</footer>
+
+</body>
+
+</html>
