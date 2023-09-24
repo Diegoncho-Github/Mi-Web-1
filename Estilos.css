@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',; /*Fuente de la pagina*/
+  }
+  
+  body{
+    background: #f5f5f5; /*Color de fondo de la pagina*/
+  }
+
+
+/*sdsad*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /*Propiedades del header*/
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Personalizacion del menu de obciones*/
+
+.menu nav ul {
+  display: flex; /* las obciones de elegir se coloca alado una del otro*/
+}
+
+.menu nav ul li {
+  list-style: none; /* quitarle los puntos a las obciones*/
+  padding: 0px 20px; /*espacio entre obciones de 20 pixeles*/
+}
+  
+.menu nav ul li a {
+  font-size: 16px; /*tamaño de letra*/
+  text-decoration: none; /*quitar la linea debajo de los link*/
+  color: #000; /*color del texto negro*/
+  transition: opacity 300ms; /*cada vez que se pase el cursor por encima se pondra opaco PARTE 1*/
+}
+
+.menu nav ul li a:hover {
+  opacity: 0.6; /*cada vez que se pase el cursor por encima se pondra opaco PARTE 2*/
+}
+
+/*Personalizacion del boton registrar*/
+
+.btn__header-register,
+.btn__register-cover {
+  padding: 14px 50px; /*espacio en blanco que rodea al contenido*/
+  border: none; /*fondo del boton sin bordes*/
+  background: #000; /*convertir cuadro a color negro*/
+  color: white; /*color del texto blanco*/
+  font-weight: 500; /*Esta propiedad define el grosor o la "negrita"*/
+  font-size: 16px; /*tamaño de la letra*/
+  cursor: pointer; /*hace que el cursor se convierta en una mano cuando se pasa sobre el elemento*/
+  transition: backgroud, color, 300ms; /*cambie de color cuando se pase el cursor por encima PARTE 1*/
+}
+
+.btn__header-register:hover,
+.btn__register-cover:hover { /*cambie de color cuando se pase el cursor por encima PARTE 2*/
+  background: #69f1a1;  /*El color que tomara cuando pase el cursor*/
+  color: #000; /*el color de la letra que tomara cuando se pase el cursor*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* PORTADA - COVER*/
+
+main {
+  max-width: 1200px;
+  height: calc(100vh + 800px);
+  padding: 40px;
+  margin: auto;
+  
+}                       
+
+.cover { /* Es para que el texto se orille a la izquierda y la imagen a la derecha*/
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.text__information-cover{
+  width: 50%; /*decirle al texto que ocupe el 50% de espacio*/ 
+}
+
+.text__information-cover h1{
+  font-size: 50px;} /*agranda la letra de h1*/
+
+.text__information-cover p{
+    font: size 18px; /*tamaño letra*/
+    margin-top: 40px; /*separacion superior*/
+}
+
+.media__cover {
+  width: 50%; /*que ocupe el 50% del tamaño de la pagina*/
+  margin-top: -40px; /*subir la imagen hacia arriba*/
+}
+
+.buttons_cover {
+  display:flex; /*que se orille a la derecha*/
+  margin-top: 40px; /*separacion superior*/
+}
+
+.btn_readmore-cover {
+  padding: 14px 40px;/*espacio en blanco que rodea al contenido*/
+  border: none; /*fondo del boton sin bordes*/
+  color: black; /*color del texto negro*/
+  font-weight: 500; /*Esta propiedad define el grosor o la "negrita"*/
+  font-size: 16px; /*tamaño de la letra*/
+  cursor: pointer; /*hace que el cursor se convierta en una mano cuando se pasa sobre el elemento*/
+  margin-left: 10px; /*distancia izquierda*/
+  transition: background 300ms; /*cambie de color cuando se pase el cursor por encima PARTE 1*/
+}
+
+.btn_readmore-cover:hover { /*cambie de color cuando se pase el cursor por encima PARTE 2*/
+  background: #e8e8e8; /*El color que tomara cuando pase el cursor*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BANNER*/
+.container__banner{
+  margin-top: 80px /*borde superior*/
+}
+
+.banner{
+  height: 250px; /* Definimos la altura del elemento a 250 píxeles. */
+  display: flex;  /* Configuramos el elemento como un contenedor flex para su contenido. */
+  align-items: center;  /* Aliniamos verticalmente el contenido en el centro del contenedor. */
+  background: #121214; /* Establecemos el color de fondo del banner en un gris oscuro. */
+  position: relative;
+}
+
+.banner_icon-heart{
+  width:35%;
+  height: 100%;
+}
+
+#icon_heart {
+  margin-top: 20px;
+  position: relative;
+  filter: drop-shadow(-40px 0px 30px rgb(94, 255, 0)); /*se le crea una sombra a la imagen*/
+}
+
+.banner__text{
+  width: 60%;
+  position: relative; /*significa que esta por delante de los que tengan posicion absoluta (texto sobrepuesto)*/
+  padding: 40px;
+
+}
+
+.banner__text h2{
+  color:white;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.banner__text a{
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 300ms;
+}
+
+.banner__text a:hover{
+  color:#69f1a1
+}
+
+.banner__icon-fire{
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+/*CSS le hace caso a la ultima linea*/
+
+/*
+color# es color hexadecimal
+color: forma normal
+color: rgb  forma rgb*/
+
+/*id=Titulo es una identificacion que se asocia a 1 solo lugar SE USA # PARA ELEGIRLO*/
+#Titulo {color:rgb(102, 28, 15);}
+/*class=Parrafo es una identificacion se puede asociar a multiples lugares SE USA PUNTO PARA ELEGIRLO*/
+.Parrafo {color:blue;}
+/*class=Parrafo la P antes del punto significa que se colocora color Yelow a todos los parrafos que 
+tengan en class la palabra Feliz*/
+P.Feliz {color:rgb(60, 255, 0);}
+/*Significa que a h2 que esta dentro del div o h3 que esta dentro del div darle color negro*/
+div h2, div h3 {color:black;}
+
+/*el * significa que a todo se le aplicara tamaño de letra 24
+el color no se aplicara si ya se aplico color con otra seleccion
+ * {font-size: 12px;} */
+
+/*
+    TIPOS DE BORDES
+    -dashed: linea punteada
+    -solid: linea solida
+    -dotted: linea de puntos
+    -etc.
+    TIPOS DE TAMAÑO
+    -rem
+    -px
+    -em
+*/
+#Bordes {border: 1px black solid;}
+
+
+/*
+    FONDO
+*/
+#Fondo {
+    background-color: rgba(255, 0, 0, 0.5); /* El último valor (0.5) controla la opacidad (0 = transparente, 1 = opaco) */
+  }
+
+/*
+    Margenes
+*/
+.Margen {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 20px; /* Aplica márgenes de 20px en todos los lados del título (arriba, abajo, izquierda y derecha) */
+}
+
+/*
+    Fuente de texto
+*/
+#Fuente {font-family: "Roboto";}
+
